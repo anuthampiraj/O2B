@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'Goldplay';
+    src: url('../fonts/Goldplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src:url('../fonts/Goldplay-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Goldplay';
+    src:url('../fonts/Goldplay-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
 html, body {
 	margin: 0px;
 	padding: 0px;
@@ -6,7 +29,7 @@ html, body {
 }
 
 body {
-	font-family: 'Helvetica';
+	font-family: 'Goldplay';
 	color: #161824;
     font-weight: normal;
     font-style: normal;
@@ -19,6 +42,7 @@ a, a:link, a:visited {
 	text-decoration: none;	
 	-moz-tap-highlight-color: transparent; 
 	-webkit-tap-highlight-color: transparent; 
+	color: #662D91;
 }
 
 img {
@@ -29,7 +53,7 @@ img {
 
 
 h1 {
-	font-family: 'Helvetica';
+	font-family: 'Goldplay';
     font-weight: normal;
 	font-size: 28px;
 	margin: 0px;
@@ -37,7 +61,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Helvetica';
+	font-family: 'Goldplay';
 	font-weight: normal;
 	font-size: 24px;
 	margin: 0px;
@@ -45,7 +69,7 @@ h2 {
 }
 
 h3, h4, h5, h6 {
-	font-family: 'Helvetica';
+	font-family: 'Goldplay';
     font-weight: normal;
 	font-size: 18px;
 	margin: 0px;
@@ -149,4 +173,120 @@ footer, header, hgroup, menu, nav, section, time {
 	font-weight: normal;
 }
 /*End IE below 9*/
+.header-left .caption a{
+	text-decoration: underline;
+}
+
+.main-wrapper{
+	max-width: 1920px;
+	width:100%;
+	margin: 0 auto;
+}
+
+#page_header{
+	background: #F6F6EC;
+}
+.main-header{
+	max-width: 1792px;
+	width:100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 30px 80px 30px 40px;
+	
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header-left{
+	align-items: center;
+}
+
+.flex{
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.caption{
+	font-size: 22px;
+	font-weight: 500;
+	padding-left: 40px;
+}
+
+.menu ul {
+	list-style: none;
+}
+
+.menu ul li{
+	display: inline-block;
+	padding-right: 72px;
+	font-size: 19px;
+	font-weight: bold;
+}
+
+.menu ul li:last-child{
+	padding-right: 0px;
+}
+
+.menu ul li:last-child a{
+	background: #662D91;
+	color: #fff;
+	border-radius: 20px;
+	padding: 25px 40px;
+}
+
+.banner{
+	background-color:#F16E67 ;
+	position: relative;
+	box-sizing: border-box;
+	height: 1090px;
+}
+
+.banner .banner-right{
+	position: absolute;
+	top:140px;
+	right: 0px;
+}
+
+.banner .banner-top-graphics{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.banner .banner-bottom-graphics{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}
+
+figure img{
+	visibility: hidden;
+}
+
+@media screen and (max-width: 1919px){
+	.main-header{
+		max-width: 131vw;
+		padding: 2vw 5.8vw 2vw 2.9vw ;
+	}
+
+	.caption{
+		padding-left: 2.9vw;
+		font-size: 1.6vw;
+	}
+	
+
+	.menu ul li{
+		padding-right: 5.2vw;
+		font-size: 1.3vw;
+	}
+
+	.menu ul li:last-child a{
+		padding: 1.8vw 2.9vw;
+	}
+}
+
+@media screen and (max-width: 991px){
+	.menu ul li:last-child a{
+		padding: 1.8vw 1.9vw;
+	}
+}
 
