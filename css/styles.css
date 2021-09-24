@@ -247,11 +247,11 @@ footer, header, hgroup, menu, nav, section, time {
 	right: 42px;
 	}
 
-a.logo{
+figure.logo{
 	width: 281px;
 }
 
-a.logo img,.banner-right-img img{
+.banner-right-img img{
 	width: 100%;
 }
 
@@ -316,9 +316,6 @@ a.logo img,.banner-right-img img{
 }
 
 
-figure img{
-	visibility: hidden;
-}
 
 
 .menu-center ul li{
@@ -587,7 +584,7 @@ p{
 		padding-right: 3.2vw;
 	}
 
-	a.logo{
+	figure.logo{
 		width: 160px;
 	}
 
