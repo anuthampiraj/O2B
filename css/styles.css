@@ -187,7 +187,7 @@ footer, header, hgroup, menu, nav, section, time {
 	background: #F6F6EC;
 }
 .main-header{
-	max-width: 1786px;
+	max-width: 1782px;
 	width:100%;
 	margin: 0 auto;
 	box-sizing: border-box;
@@ -232,8 +232,20 @@ footer, header, hgroup, menu, nav, section, time {
 	background: #662D91;
 	color: #fff;
 	border-radius: 20px;
-	padding: 25px 40px;
+	padding: 30px 78px 30px 45px;
+	text-transform: uppercase;
+	position: relative;
 }
+
+.menu ul li:last-child a::after{
+	position: absolute;
+	content:'';
+	background: url(../images/arrow.png) no-repeat 0 0 ;
+	width: 27px;
+	height: 27px;
+	top:30px;
+	right: 42px;
+	}
 
 a.logo{
 	width: 281px;
@@ -437,7 +449,7 @@ p{
 
 @media screen and (max-width: 1919px){
 	.main-header{
-		max-width:93.021vw;
+		max-width:92.813vw;
 		padding:1.458vw 0vw 2vw 0vw ;
 	}
 
@@ -453,8 +465,13 @@ p{
 	}
 
 	.menu ul li:last-child a{
-		padding: 1.8vw 2.9vw;
+		padding: 1.563vw 4.063vw 1.563vw 2.344vw;
 	}
+
+	.menu ul li:last-child a::after{
+		top:1.563vw;
+		right: 2.188vw;
+		}
 
 	.banner{
 		height: 49vw;
@@ -555,8 +572,11 @@ p{
 
 }
 
-
-
+@media screen and (max-width: 1024px){
+.menu ul li:last-child a::after{
+	display: none;
+}
+}
 
 @media screen and (max-width: 991px){
 	.menu ul li:last-child a{
