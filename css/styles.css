@@ -187,11 +187,11 @@ footer, header, hgroup, menu, nav, section, time {
 	background: #F6F6EC;
 }
 .main-header{
-	max-width: 1792px;
+	max-width: 1786px;
 	width:100%;
 	margin: 0 auto;
 	box-sizing: border-box;
-	padding: 30px 80px 30px 40px;
+	padding: 28px 0px 30px 0px;
 	
 	align-items: center;
 	justify-content: space-between;
@@ -209,7 +209,7 @@ footer, header, hgroup, menu, nav, section, time {
 .caption{
 	font-size: 22px;
 	font-weight: 500;
-	padding-left: 40px;
+	padding-left: 27px;
 }
 
 .menu ul,.menu-center ul {
@@ -325,7 +325,7 @@ figure img{
 	padding: 7px 20px;
 }
 
-.menu-center ul li a:hover{
+.menu-center ul li a:hover,.menu-center ul li a.selected{
 	background: #E2E2D5;
 	border-radius: 12px;
 }
@@ -334,7 +334,7 @@ figure img{
 	background: url(../images/bgAbout.jpg) no-repeat 0 0;
 	background-size: cover;
 	width: 100%;
-	padding: 200px 0px 193px;
+	padding:183px 0px 193px;
 	position: relative;
 }
 
@@ -354,8 +354,10 @@ h4{
 }
 
 .home-about h4{
-	padding-top: 65px;
+	padding-top:41px;
+	line-height: 43px;
 	color: #231F20;
+	font-weight: bold;
 }
 
 .home-about-right-corner{
@@ -371,7 +373,7 @@ h4{
 }
 
 .about-box{
-	padding-top:  70px;
+	padding-top:  55px;
 }
 
 .about-box .single-item{
@@ -420,7 +422,7 @@ p{
 	width: 895px;
 	height: 843px;
 	right: -700px;
-	top: 40%;
+	top: 35%;
 }
 
 .slick-track
@@ -435,12 +437,12 @@ p{
 
 @media screen and (max-width: 1919px){
 	.main-header{
-		max-width: 131vw;
-		padding: 2vw 5.8vw 2vw 2.9vw ;
+		max-width:93.021vw;
+		padding:1.458vw 0vw 2vw 0vw ;
 	}
 
 	.caption{
-		padding-left: 2.9vw;
+		padding-left: 1.406vw;
 		font-size: 1.6vw;
 	}
 	
@@ -496,7 +498,6 @@ p{
 
 	h4{
 		font-size: 1.928vw;
-		font-weight: bold;
 	}
 
 	p{
@@ -504,11 +505,12 @@ p{
 	}
 
 	.home-about {
-		padding: 10.417vw 0px 10.052vw;
+		padding: 9.531vw 0px 10.052vw;
 	}
 
 	.home-about h4{
-		padding-top: 3.38vw;
+		padding-top: 2.135vw;
+		line-height: 2.240vw;
 	}
 
 	.about-box .single-item{
@@ -533,7 +535,7 @@ p{
 
 
 	.banner .menu-center {
-		max-width: 36.998vw;
+		max-width:37.135vw;
 		padding: 0.521vw 0.781vw;
 	}
 
@@ -548,7 +550,7 @@ p{
 	}
 
 	.about-box {
-		padding-top: 3.646vw;
+		padding-top: 2.865vw;
 	}
 
 }
